@@ -1,7 +1,6 @@
 import { Injectable } from '@angular/core';
-import mqtt from 'mqtt'; // 🔥 Pure default fallback import for Vite compatibility
-import { environment } from '../../environments/environment'; // 👈 Adjusted relative path to your file
-
+import mqtt from 'mqtt';
+import { environment } from '@env/environment';
 @Injectable({
   providedIn: 'root',
 })
