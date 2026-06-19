@@ -1,0 +1,66 @@
+.control-container {
+  max-width: 400px;
+  margin: 40px auto;
+  padding: 20px;
+  background-color: #1a1a1a;
+  color: #ffffff;
+  border-radius: 16px;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.3);
+  text-align: center;
+  font-family: system-ui, sans-serif;
+}
+
+h2 {
+  margin-bottom: 25px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}
+
+.steering-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px;
+  align-items: center;
+  margin-bottom: 25px;
+}
+
+.btn {
+  padding: 18px 10px;
+  font-size: 14px;
+  font-weight: bold;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: transform 0.1s ease, background-color 0.2s ease;
+  user-select: none;
+}
+
+.btn:active {
+  transform: scale(0.95);
+}
+
+.drive-btn { background-color: #2e7d32; color: white; }
+.drive-btn:hover { background-color: #1b5e20; }
+
+.steer-btn { background-color: #0288d1; color: white; }
+.steer-btn:hover { background-color: #01579b; }
+
+.center-btn { background-color: #37474f; color: white; }
+.center-btn:hover { background-color: #263238; }
+
+.divider {
+  border: 0;
+  height: 1px;
+  background: #333;
+  margin: 20px 0;
+}
+
+.stop-btn {
+  width: 100%;
+  background-color: #c62828;
+  color: white;
+  padding: 20px;
+  font-size: 16px;
+  letter-spacing: 1px;
+}
+.stop-btn:hover { background-color: #b71c1c; }

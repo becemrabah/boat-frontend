@@ -1,0 +1,21 @@
+<div class="control-container">
+  <h2>🏴‍☠️ Cellular Boat Controller</h2>
+
+  <div class="steering-grid">
+    <div></div>
+    <button class="btn drive-btn" (click)="moveForward()">🔺 FORWARD</button>
+    <div></div>
+
+    <button class="btn steer-btn" (click)="turnLeft()">◀️ LEFT</button>
+    <button class="btn center-btn" (click)="centerRudder()">🎯 CENTER</button>
+    <button class="btn steer-btn" (click)="turnRight()">▶️ RIGHT</button>
+
+    <div></div>
+    <button class="btn drive-btn" (click)="reverse()">🔻 REVERSE</button>
+    <div></div>
+  </div>
+
+  <hr class="divider" />
+
+  <button class="btn stop-btn" (click)="stop()">🛑 STOP</button>
+</div>
