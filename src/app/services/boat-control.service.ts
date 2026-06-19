@@ -1,13 +1,12 @@
 import { Injectable } from '@angular/core';
 import mqtt from 'mqtt';
-import { environment } from '@env/environment';
 @Injectable({
   providedIn: 'root',
 })
 export class BoatControlService {
   private client!: any;
-  private brokerUrl = environment.mqtt.brokerUrl; // 👈 Pulled from environment
-  private topic = environment.mqtt.topic; // 👈 Pulled from environment
+  private brokerUrl = 'wss://broker.hivemq.com:8884/mqtt'; // 👈 Pulled from environment
+  private topic = 'boat/control/field1'; // 👈 Pulled from environment
 
   constructor() {
     this.connect();
